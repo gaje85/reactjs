@@ -1,0 +1,11 @@
+.basic-events {
+    font-size: 14px;
+    color: #123456;
+    margin: 25px;
+}
+
+.click-me-button {
+    width: 100px;
+    padding: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.form-container {
+    margin: 25px;
+}
+
+.form-container label {
+    margin-right: 10px;
+}
+
+.form-container .login-failure {
+    color: red;
+}
+
+.form-container .login-success {
+    color: green;
+}
