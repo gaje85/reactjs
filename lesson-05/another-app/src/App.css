@@ -1,0 +1,20 @@
+.dark-app, .light-app {
+  text-align: center;
+  margin: 25px;
+}
+
+.dark-app {
+  background-color: #123456;
+}
+
+.light-app {
+  background-color: #ffffff;
+}
+
+.dark-parent-component, .dark-nested-component, .dark-another-nested-component {
+  color: #ffffff;
+}
+
+.light-parent-component, .light-nested-component, .light-another-nested-component {
+  color: #123456;
+}
