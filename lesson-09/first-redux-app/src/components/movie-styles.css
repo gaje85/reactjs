@@ -1,0 +1,25 @@
+.movie {
+    border: 1px solid #742d04;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.movie h3 {
+    color: #e8e69b;
+}
+.movie h3,  .movie h5 {
+    font-family: "Copperplate Gothic Light", sans-serif;
+    margin: 10px;
+}
+
+.movie button {
+    margin: 10px;
+}
+
+.movie-input {
+    border: 1px solid #742d04;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}

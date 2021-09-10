@@ -1,13 +1,13 @@
 import './movie-styles.css';
-import {useContext} from 'react';
-import {MovieContext} from '../utils/StateUtils';
+import {toggleMovieWatchedStatus} from '../utils/ReduxUtils';
+import {useDispatch, useSelector} from 'react-redux';
 
 function MovieDisplay() {
-  const {state} = useContext(MovieContext);
+  const movies = useSelector((s) => s.movies);
   return (
     <div className="display-container">
       {
-        state.movies.map(movie => <Movie key={movie.id}
+        movies.map(movie => <Movie key={movie.id}
                                    movie={movie}
         />)
       }
@@ -18,9 +18,10 @@ function MovieDisplay() {
 export default MovieDisplay;
 
 function Movie(props) {
-  const {toggleWatched} = useContext(MovieContext);
+  const dispatcher = useDispatch();
+
   const onToggleWatched = () => {
-    toggleWatched(props.movie.id);
+    dispatcher(toggleMovieWatchedStatus({id: props.movie.id}));
   };
 
   return (
